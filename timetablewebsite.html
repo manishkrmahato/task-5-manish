@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 90%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        .table-container {
+            margin-bottom: 40px;
+        }
+
+        .schedule-table td,
+        .schedule-table th {
+            border-right: 2px solid #ddd;
+        }
+
+        .schedule-table th:last-child,
+        .schedule-table td:last-child {
+            border-right: none;
+        }
+
+        .course-table td {
+            font-size: 14px;
+            background-color: #fafafa;
+        }
+
+        .course-table tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        .course-table tr:hover td {
+            background-color: #e1e1e1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><center>Time Table</center></h1>
+
+    <div class="table-container schedule-table">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>9:00-9:55</th>
+                <th>10:00-11:55</th>
+                <th>12:00-12:55</th>
+                <th>01:00-02:55</th>
+                <th>03:00-03:55</th>
+                <th>04:00-04:55</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>DSA</td>
+                <td rowspan="3">Calculus</td>
+                <td>Optimization Technique</td>
+                <td>Lunch</td>
+                <td>Web Programming</td>
+                <td>BEEE</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>DSA</td>
+                <td>Calculus</td>
+                <td>Lunch</td>
+                <td>Discrete Mathematics</td>
+                <td>Web Programming</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>DSA</td>
+                <td>Calculus</td>
+                <td>Optimization Technique</td>
+                <td>Lunch</td>
+                <td>Web Programming</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>DSA</td>
+                <td>Lunch</td>
+                <td>Optimization Technique</td>
+                <td>Discrete Mathematics</td>
+                <td>Web Programming</td>
+                <td>BEEE</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>DSA</td>
+                <td>Calculus</td>
+                <td>Lunch</td>
+                <td>Discrete Mathematics</td>
+                <td>Web Programming</td>
+                <td>BEEE</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>DSA</td>
+                <td>Calculus</td>
+                <td>Optimization Technique</td>
+                <td>Lunch</td>
+                <td>Web Programming</td>
+                <td>BEEE</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td colspan="6">No Classes</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-container course-table">
+        <table>
+            <tr>
+                <th>S.No.</th>
+                <th>Course Code</th>
+                <th>Name Of the Course</th>
+                <th>Faculty</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>MA1162</td>
+                <td>Calculus</td>
+                <td>Prof. Deepika Neela</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>EE1161</td>
+                <td>BEEE</td>
+                <td>Prof. Debasmita Panda</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CS1108</td>
+                <td>Web Programming</td>
+                <td>Prof. E. Suresh Babu</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>CS1106</td>
+                <td>DSA</td>
+                <td>Prof. Venkateswara Rao Kagita</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>CS1104</td>
+                <td>Optimisation Technique</td>
+                <td>Prof. Sujit Das</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
